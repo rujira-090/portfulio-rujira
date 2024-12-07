@@ -1,0 +1,163 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header section */
+.header {
+    background-color: #ced7df;
+    padding: 90px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 180px; /* เพิ่มระยะห่างด้านล่าง */
+}
+
+.header img {
+    width: 255px;
+    height: 265px;
+    margin-top: 200px;
+    position: absolute; /* ตำแหน่งอิสระ */
+    top: -100px; /* ดึงรูปภาพขึ้นไปเหนือพื้นหลัง */
+    left: 50%; /* จัดให้อยู่ตรงกลางแนวนอน */
+    transform: translateX(-50%); /* ปรับตำแหน่งให้ตรงกลางจริง ๆ */
+    background-color: white;
+    padding: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* เพิ่มมุมโค้งมนเล็กน้อย */
+}
+
+.header h1 {
+    margin: 10px 0;
+}
+
+/* Navigation menu */
+.nav-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-menu a:hover {
+    background-color: #d6e9f8;
+}
+
+/* Sticky Navigation Menu */
+.nav-menu {
+    position: fixed; /* ทำให้แถบเมนูอยู่ติดกับขอบของหน้าจอ */
+    top: 0; /* ยึดไว้ที่ด้านบน */
+    right: 20px; /* ระยะจากขอบขวา */
+    background-color: #ced7df; /* สีพื้นหลังของเมนู */
+    padding: 10px 15px;
+    z-index: 1000; /* ทำให้แถบเมนูอยู่ด้านบนสุด */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เงาเล็กน้อย */
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-menu a:hover {
+    background-color: #d6e9f8;
+}
+
+/* Section for the text content */
+.game-section {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.game-section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ff5722;
+    text-decoration: none;
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+    max-width: 480px;
+    margin: 20px auto;
+    display: block;
+}
+
+.indent {
+    text-indent: 20px; /* เว้นวรรคเฉพาะบรรทัดแรก */
+}
+
+.contact-icons {
+    text-align: center; /* จัดตำแหน่งไอคอนให้ตรงกลาง */
+    margin-top: 20px;
+}
+
+.contact-icons a {
+    margin: 0 15px; /* ช่องว่างระหว่างไอคอน */
+}
+
+.social-icon {
+    width: 70px; /* กำหนดขนาดไอคอน */
+    height: 40px;
+    transition: transform 0.3s ease; /* เพิ่มการเปลี่ยนแปลงเมื่อมีการโฮเวอร์ */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* ขยายขนาดเมื่อมีการโฮเวอร์ */
+}
+
+.home-button {
+    position: fixed; /* เลื่อนตามหน้าจอ */
+    bottom: 20px; /* ระยะห่างจากขอบล่าง */
+    right: 20px; /* ระยะห่างจากขอบขวา */
+    width: 60px;
+    height: 60px;
+    background: url('home-icon.png') no-repeat center center;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    z-index: 1001; /* ให้ปุ่มอยู่ด้านบน */
+}
+
+.home-button:hover {
+    opacity: 0.8; /* เอฟเฟกต์เมื่อเอาเมาส์ชี้ */
+}
+
+
+
+
+

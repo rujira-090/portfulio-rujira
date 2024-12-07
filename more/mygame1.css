@@ -1,0 +1,141 @@
+/* สไตล์สำหรับ header และ navigation */
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.header1 {
+    position: sticky;
+    top: 0;
+    background-color: #4b8ccd;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* สไตล์สำหรับส่วนเกม */
+.game-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.game-section h2 {
+    color: #ff5722;
+    font-size: 24px;
+}
+
+.game-section p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.game-link {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.game-link:hover {
+    background-color: #e64a19;
+}
+
+/* สไตล์สำหรับ YouTube Video */
+.youtube-video iframe {
+    width: 80%; /* ปรับขนาดความกว้างของ YouTube iframe */
+    height: 300px; /* ปรับขนาดความสูงของ YouTube iframe */
+    margin-top: 20px;
+    border-radius: 10px;
+    max-width: 600px; /* จำกัดขนาดสูงสุดของ YouTube iframe */
+}
+
+.viewer-container iframe {
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+/* ปุ่ม Home */
+.home-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: url('home-icon.png') no-repeat center center;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+}
+
+.home-button:hover {
+    opacity: 0.8;
+}
+
+        /* ปรับแต่งปุ่ม */
+        .game-link {
+            background-color: #000000;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: all 0.3s ease; /* เพิ่มการเคลื่อนไหวเมื่อเปลี่ยนแปลง */
+        }
+
+        /* เอฟเฟคเมื่อกดปุ่ม */
+        .game-link:active {
+            background-color: #ff5722; /* เปลี่ยนสีพื้นหลังเมื่อกด */
+            transform: scale(0.95); /* ย่อขนาดปุ่มเล็กลงเล็กน้อย */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+        }
+
+        .game-link:hover {
+            opacity: 0.8; /* เอฟเฟกต์เมื่อเอาเมาส์ชี้ */
+        }
+
+        .art-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* ช่องว่างระหว่างรูป */
+            justify-content: space-between; /* จัดเรียงให้พอดี */
+        }
+        
+        .art-image {
+            width: calc(33.33% - 20px); /* รูปจะมีความกว้างประมาณ 1/3 ของความกว้าง container ลบช่องว่าง */
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .indent {
+            text-indent: 20px; /* เว้นวรรคเฉพาะบรรทัดแรก */
+        }
+
+        p {
+            text-align: left; /* ทำให้ข้อความอยู่ทางซ้าย */
+            margin-left: 20px; /* เพิ่มระยะห่างจากขอบซ้าย */
+        }
